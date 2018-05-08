@@ -1,0 +1,8 @@
+open issues for e2e and lint : https://github.com/angular/angular-cli/issues/9232
+
+1. client-so-studyOptimizer : contains the existing app
+2. client-so-studyOptimizer-app : will contain the new angular 5 app
+	a. main : angular 5 app features excluding login and common features
+	b. login : angular 5 app login feature
+	c. common : angular 5 app common features
+

@@ -1,0 +1,17 @@
+{
+  "extends": "../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../out-tsc/app",
+    "baseUrl": "./",
+    "paths": {
+      "@common/*": ["so-common-app/*","../so-common-app/*","./../../so-common-app/*","../../../so-common-app/*"]
+    },
+    "module": "es2015",
+    "types": [],
+    "allowJs": true
+  },
+  "exclude": [
+    "test.ts",
+    "**/*.spec.ts"
+  ]
+}
