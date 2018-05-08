@@ -1,3 +1,5 @@
+import { products } from './product';
+import { KendoGridComponent } from './kendogrid.component';
 import { TileComponent } from './tile.component';
 import { MessageComponent } from './message.component';
 declare var require: any;
@@ -34,7 +36,7 @@ export class AppComponent {
     this.entry.clear();
     const factory= this.resolver.resolveComponentFactory(MessageComponent);
     this.componentRef= this.entry.createComponent(factory);
-    this.componentRef.instance.data=message;
+    this.componentRef.instance.data=products;
   }
   AnotherComponent() {
     this.entry.clear();
@@ -42,6 +44,15 @@ export class AppComponent {
     this.componentRef= this.entry.createComponent(factory);
     this.componentRef.instance.code=["Swapnil","Test","Test2"];
 
+}
+
+LoadGrid(){
+    this.entry.clear();
+    const factory= this.resolver.resolveComponentFactory(KendoGridComponent);
+    this.componentRef= this.entry.createComponent(factory);
+    this.componentRef.instance.gridData= products;
+
+  
 }
 
 }

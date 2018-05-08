@@ -14,12 +14,18 @@ import { DropDownsModule } from '@progress/kendo-angular-dropdowns'
 
 import { NgJsonEditorModule } from 'ang-jsoneditor';
 import { TileComponent } from "./tile.component";
+import { KendoGridComponent } from "./kendogrid.component";
+import { GridModule } from '@progress/kendo-angular-grid';
+import { ButtonModule } from "@progress/kendo-angular-buttons";
+//import { ButtonModule } from '@progress/kendo-angular-grid';
 @NgModule({
-  declarations: [AppComponent,MessageComponent,TileComponent],
+  declarations: [AppComponent,MessageComponent,TileComponent,KendoGridComponent],
   imports: [
     
     BrowserModule, HttpClientModule,
+    GridModule,
    FormsModule,
+   ButtonModule,
   
     NgJsonEditorModule,
      BrowserAnimationsModule,
@@ -30,6 +36,6 @@ import { TileComponent } from "./tile.component";
     AppComponentService
   ],
   bootstrap: [AppComponent],
-  entryComponents: [MessageComponent,TileComponent]
+  entryComponents: [MessageComponent,TileComponent,KendoGridComponent]
 })
 export class AppModule {}

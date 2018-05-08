@@ -1,4 +1,23 @@
-<h1>Dynamic Component Loading</h1>
-<button (click)="CreateComponent('Hello World')">Dynamic Component</button>
-<button (click)="AnotherComponent()">Another Dynamic Component</button>
-<ng-template #messagecontainer></ng-template>
+<div class="container" style="padding:8px;">
+<div class="row">
+  <div class="col-md-12">
+    <h1>Dynamic Component Loading</h1>
+  </div>
+  <div class="col-md-2">
+    <button kendoButton (click)="CreateComponent('Hello World')" [primary]="true">Dync 1st</button>
+  </div>
+  <div class="col-md-2">
+    <button kendoButton (click)="AnotherComponent()" [primary]="true">Dync 2nd</button>
+  </div>
+  <div class="col-md-2">
+    <button kendoButton (click)="LoadGrid()" [primary]="true">Dync 3rd</button>
+  </div>
+</div>
+<div class="row">
+
+  <div class="col-md-12" style="padding-top:15px">
+    <ng-template #messagecontainer></ng-template>
+  </div>
+</div>
+    
+</div>

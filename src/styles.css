@@ -1,12 +1,3 @@
-/* You can add global styles to this file, and also import other style files */
-@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
-@import "~jsoneditor/dist/jsoneditor.min.css";
-
-div.jsoneditor-outer.has-nav-bar{
-    height:340px !important;
-}
-
-#mainPanel{
-    padding-left:90px;
-    padding-top:19px;
-}
+ /* You can add global styles to this file, and also import other style files */
+ @import url('https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css');
+  @import url('https://www.telerik.com/kendo-angular-ui/npm/node_modules//@progress/kendo-theme-default/dist/all.css');
