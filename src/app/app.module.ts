@@ -12,7 +12,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DropDownsModule } from '@progress/kendo-angular-dropdowns'
 
-import { NgJsonEditorModule } from 'ang-jsoneditor';
 import { TileComponent } from "./tile.component";
 import { KendoGridComponent } from "./kendogrid.component";
 import { GridModule } from '@progress/kendo-angular-grid';
@@ -26,8 +25,6 @@ import { ButtonModule } from "@progress/kendo-angular-buttons";
     GridModule,
    FormsModule,
    ButtonModule,
-  
-    NgJsonEditorModule,
      BrowserAnimationsModule,
     DropDownsModule
   ],
